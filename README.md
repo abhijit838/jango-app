@@ -24,7 +24,7 @@ from django.db import models
 # Create your models here.
 from django.utils import timezone
 
-
+```python
 class Post(models.Model):
 	author = models.ForeignKey('auth.User')
 	title = models.CharField(max_length=200)
@@ -38,6 +38,7 @@ class Post(models.Model):
 
 	def str(self):
 		return self.title
+```
 * Create migration for model $ python manage.py makemigrations blog, 
 * Apply migration to create model in database $ python manage.py migrate blog
 * To do any operation on model we will use admin
