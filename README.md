@@ -44,3 +44,5 @@ class Post(models.Model):
 * To do any operation on model we will use admin
 * Register model in admin → admin.site.register(Post)
 * Create super user to login to admin $ python manage.py createsuperuser
+* Browse /admin and login with username password
+* Post your blog content
